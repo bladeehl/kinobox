@@ -1,0 +1,156 @@
+/* Основной стиль */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1E1E24;
+    color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Добавлено: элементы будут распределены по краям */
+    padding: 10px 20px;
+    background-color: #2C2C34;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    height: 50px;
+}
+
+.search-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Центрирование поиска */
+    width: 60%; /* Можно настроить ширину строки поиска */
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.logout-btn, .watchlist-btn {
+    padding: 10px 20px;
+    background-color: #F44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.logout-btn:hover, .watchlist-btn:hover {
+    background-color: #D32F2F;
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.favorites-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    background-color: #2C2C34;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.movie-card a {
+    text-decoration: none;
+    color: white;
+}
+/* Выпадающее меню пользователя */
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #2C2C34;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+    text-align: left;
+    width: 200px;
+}
+
+.user-dropdown.show {
+    display: block;
+}
+
+.username {
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.dropdown-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #F44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dropdown-btn:hover {
+    background-color: #D32F2F;
+}
+
+.dropdown-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+.dropdown-link:hover {
+    background-color: #388E3C;
+}
